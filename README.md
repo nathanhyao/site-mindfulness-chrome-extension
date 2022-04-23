@@ -1,5 +1,11 @@
 # Syntax tutorial per file
 
+## Running and testing extension
+Chrome > top right puzzle icon, “Extensions” > “Manage extensions” > top right, “Developer mode”, turn ON > top left, “Load unpacked” > choose project folder containing extension
+
+- extension will apear in Extensions page
+- click refresh icon on extension to reload from disk
+
 ## manifest.json
 File contains all configuration info: essential for Chrome to recognize project as extension.
 
@@ -32,7 +38,7 @@ switch (window.location.hostname) {
         document.body.innerHTML = "<button> Click This </button>"
         break;
     case "www.tiktok.com":
-        // can entire page with separate HTML page.
+        // can replace site with entirely different HTML page.
         documment.body.innerHTML = generateHTML("TikTok");
         break;
     case "www.netflix.com":
@@ -40,9 +46,3 @@ switch (window.location.hostname) {
         break;
 }
 ```
-
-## Running and testing extension
-Chrome > top right puzzle icon, “Extensions” > “Manage extensions” > top right, “Developer mode”, turn ON > top left, “Load unpacked” > choose project folder containing extension
-
-- extension will apear in Extensions page
-- click refresh icon on extension to reload from disk
