@@ -46,3 +46,5 @@ switch (window.location.hostname) {
         break;
 }
 ```
+
+Change of goals, project temporarily put off
